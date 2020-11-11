@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="730.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="temperatureproject.controllers.FXMLMainTableController" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+   <children>
+      <TableView fx:id="mainTable" prefHeight="730.0" prefWidth="1100.0" stylesheets="@../styles/Styles.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <columns>
+            <TableColumn fx:id="columnPatientId" prefWidth="133.0" text="HASTA ID" />
+            <TableColumn fx:id="columnNameSurname" prefWidth="125.0" text="AD-SOYAD" />
+            <TableColumn fx:id="columnDate" prefWidth="124.0" text="TARİH" />
+            <TableColumn fx:id="columnTime" prefWidth="125.0" text="SAAT" />
+            <TableColumn fx:id="columnTemperature" prefWidth="133.0" text="SICAKLIK" />
+            <TableColumn fx:id="columnHumidity" prefWidth="133.0" text="NEM" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="650.0" prefWidth="1070.0" style="-fx-background-color: #b2bec3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="temperatureproject.controllers.FXMLExportController">
+   <children>
+      <VBox layoutX="401.0" prefHeight="650.0" prefWidth="669.0" style="-fx-background-color: #b2bec3;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" text="Lütfen tablosunu dışa aktarmak istediğiniz hastayı seçiniz.">
+               <font>
+                  <Font size="27.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="30.0" top="50.0" />
+               </VBox.margin>
+            </Label>
+            <ChoiceBox fx:id="patientChoice" maxWidth="1.7976931348623157E308" prefHeight="62.0" prefWidth="343.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="150.0" right="150.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <TextField fx:id="fileName" alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" promptText="Dosyanın Adı">
+               <VBox.margin>
+                  <Insets left="200.0" right="200.0" top="50.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="15.0" top="15.0" />
+               </padding>
+            </TextField>
+            <Button fx:id="exportTable" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonExportPatient" prefHeight="61.0" prefWidth="222.0" styleClass="custom-menu-button" text="Dışa Aktar">
+               <font>
+                  <Font size="28.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="250.0" right="250.0" top="50.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="100.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

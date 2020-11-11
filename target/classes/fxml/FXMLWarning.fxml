@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="230.0" prefWidth="536.0" style="-fx-background-color: #b2bec3;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="temperatureproject.controllers.FXMLWarningController">
+   <children>
+      <ImageView fitHeight="76.0" fitWidth="65.0" layoutX="45.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icons/warning-sign.png" />
+         </image>
+      </ImageView>
+      <Line endX="100.0" fill="#273f6e" layoutX="101.0" layoutY="58.0" startX="-100.0" strokeLineCap="ROUND" strokeType="OUTSIDE">
+         <effect>
+            <Shadow height="5.45" radius="4.5575" width="14.78" />
+         </effect>
+      </Line>
+      <Line endX="100.0" fill="#273f6e" layoutX="303.0" layoutY="58.0" startX="-100.0" strokeLineCap="ROUND" strokeType="OUTSIDE">
+         <effect>
+            <Shadow height="5.45" radius="4.5575" width="14.78" />
+         </effect>
+      </Line>
+      <Line endX="100.0" fill="#273f6e" layoutX="505.0" layoutY="58.0" startX="-100.0" strokeLineCap="ROUND" strokeType="OUTSIDE">
+         <effect>
+            <Shadow height="5.45" radius="4.5575" width="14.78" />
+         </effect>
+      </Line>
+      <Text layoutX="36.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UYARI" wrappingWidth="82.2353515625">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Text>
+      <Button fx:id="okayButton" layoutX="241.0" layoutY="165.0" mnemonicParsing="false" onAction="#handleButtonOkay" prefHeight="31.0" prefWidth="125.0" styleClass="custom-menu-button" stylesheets="@../../css/verticalMenu.css" text="Tamam">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textWarning" editable="false" layoutX="135.0" layoutY="95.0" prefHeight="40.0" prefWidth="444.0" style="-fx-background-color: #b2bec3;" />
+   </children>
+</AnchorPane>
